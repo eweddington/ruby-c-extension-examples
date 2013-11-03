@@ -107,7 +107,6 @@
     <ClCompile Include="src\RubyUtils\RubyUtils.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\SUEX_HelloWorld.h" />
     <ClInclude Include="src\RubyUtils\RubyLib.h" />
     <ClInclude Include="src\RubyUtils\RubyUtils.h" />
   </ItemGroup>

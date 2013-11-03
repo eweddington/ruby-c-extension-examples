@@ -1,4 +1,3 @@
-#include "SUEX_HelloWorld.h"
 
 #include "RubyUtils/RubyUtils.h"
 
