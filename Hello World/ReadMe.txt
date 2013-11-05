@@ -12,4 +12,4 @@ Windows
   * The init function must be exported in the .def file.
 
 OSX
-  * XCode 4.6 Solution (TODO)
+  * XCode 4.5 Solution
