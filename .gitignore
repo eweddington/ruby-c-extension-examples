@@ -6,3 +6,8 @@ ipch/
 *.suo
 Release/
 xcuserdata/
+
+*.so
+*.bundle
+*.o
+MakeFile
