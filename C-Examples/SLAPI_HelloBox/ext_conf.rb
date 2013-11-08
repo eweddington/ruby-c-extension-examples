@@ -52,9 +52,18 @@ have_func( 'round', 'math.h' )
 # + SLAPI
 #   + SketchUp-SDK-Mac
 #   + SketchUp-SDK-Win
-
-# TODO: This path is currently not configurable.
-slapi_root = File.join(ENV['HOME'], 'SLAPI')
+#
+# If the SLAPI project isn't installed to %HOME%/SLAPI then add the custom
+# location using --with-slapi-root:
+#
+#   ruby extconf.rb --with-slapi-root=/my/custom/location
+SLAPI_ROOT_CONFIG = '--with-slapi-root'
+if $configure_args.key?(SLAPI_ROOT_CONFIG)
+  slapi_root = $configure_args[SLAPI_ROOT_CONFIG]
+else
+  slapi_root = File.join(ENV['HOME'], 'SLAPI')
+end
+puts "slapi-root: #{slapi_root}"
 if PLATFORM_IS_OSX
   slapi_osx       = File.join(slapi_root, 'SketchUp-SDK-Mac')
   slapi_framework = File.join(slapi_osx, 'slapi.framework')
