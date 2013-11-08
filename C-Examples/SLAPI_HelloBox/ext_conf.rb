@@ -58,7 +58,7 @@ slapi_root = File.join(ENV['HOME'], 'SLAPI')
 if PLATFORM_IS_OSX
   slapi_osx       = File.join(slapi_root, 'SketchUp-SDK-Mac')
   slapi_framework = File.join(slapi_osx, 'slapi.framework')
-  slapi_resources = File.join(slapi_framework, 'Current')
+  slapi_resources = File.join(slapi_framework, 'Versions', 'Current')
   slapi_headers   = File.join(slapi_resources, 'Headers')
   slapi_libs      = File.join(slapi_resources, 'Libraries')
 
