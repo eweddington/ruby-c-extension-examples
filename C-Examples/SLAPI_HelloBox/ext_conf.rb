@@ -35,11 +35,19 @@ when 'gcc'
 end
 
 # Configure some extra warnings that -Wall and -Wextra doesn't enable.
-warnflags += ' -Wshadow -Wconversion'
+warnflags << ' -Wshadow -Wconversion'
 
 # Matches original $CFLAGS configuration.
 cflags = "#{optflags} #{debugflags} #{warnflags}"
 $CFLAGS = "#{cflags} -fno-common -pipe"
+
+# Ensure compiler is set to compile C99 code.
+case CONFIG['CC']
+when 'gcc'
+  # NOTE: -std=c99 will not work!
+  $CFLAGS << ' -std=gnu99 -Wno-declaration-after-statement'
+  $LDFLAGS << ' -std=gnu99'
+end
 
 # Visual Studio C++ 2010 doesn't include a round() function in <math.h> This
 # check will enable a HAVE_ROUND preprocessor constant.
@@ -82,12 +90,13 @@ if PLATFORM_IS_OSX
 
   have_framework('slapi') or raise 'SLAPI framework not found!'
 else
-  # (!) Untested!
   slapi_win     = File.join(slapi_root, 'SketchUp-SDK-Win')
   slapi_headers = File.join(slapi_win, 'Headers')
   slapi_libs    = File.join(slapi_win, 'binaries', 'x86')
 
   dir_config('slapi', slapi_headers, slapi_libs)
+
+  have_library('slapi', '_imp__SUInitialize')
 end
 
 have_header('slapi/slapi.h') or raise 'SLAPI header not found!'

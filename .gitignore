@@ -11,3 +11,6 @@ xcuserdata/
 *.bundle
 *.o
 MakeFile
+
+C-Examples/**/*.def
+C-Examples/**/*.log
