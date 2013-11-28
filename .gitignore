@@ -1,8 +1,12 @@
 Hello World/Debug/
 Debug/
+Release/
+
 *.opensdf
 *.sdf
-ipch/
 *.suo
-Release/
+ipch/
+
 xcuserdata/
+
+C-Examples
