@@ -8,19 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		33CDE7B0182705EB00F7C6E8 /* SUEX_HelloWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33CDE7AF182705EB00F7C6E8 /* SUEX_HelloWorld.cpp */; };
-		33CDE7B3182709C100F7C6E8 /* Ruby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33CDE7B2182709C100F7C6E8 /* Ruby.framework */; };
 		33CDE7B918270A4800F7C6E8 /* RubyLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 33CDE7B618270A4800F7C6E8 /* RubyLib.h */; };
 		33CDE7BA18270A4800F7C6E8 /* RubyUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33CDE7B718270A4800F7C6E8 /* RubyUtils.cpp */; };
 		33CDE7BB18270A4800F7C6E8 /* RubyUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 33CDE7B818270A4800F7C6E8 /* RubyUtils.h */; };
+		CEA008E718475E1C00B76BEC /* Ruby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA008E618475E1C00B76BEC /* Ruby.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		33CDE5E5182703B200F7C6E8 /* SUEX_HelloWorld.bundle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = SUEX_HelloWorld.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		33CDE7AF182705EB00F7C6E8 /* SUEX_HelloWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SUEX_HelloWorld.cpp; path = src/SUEX_HelloWorld.cpp; sourceTree = "<group>"; };
-		33CDE7B2182709C100F7C6E8 /* Ruby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ruby.framework; path = ../ThirdParty/lib/mac/Ruby.framework; sourceTree = "<group>"; };
 		33CDE7B618270A4800F7C6E8 /* RubyLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RubyLib.h; sourceTree = "<group>"; };
 		33CDE7B718270A4800F7C6E8 /* RubyUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RubyUtils.cpp; sourceTree = "<group>"; };
 		33CDE7B818270A4800F7C6E8 /* RubyUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RubyUtils.h; sourceTree = "<group>"; };
+		CEA008E618475E1C00B76BEC /* Ruby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ruby.framework; path = ../ThirdParty/lib/mac/2.0.0/Ruby.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,7 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33CDE7B3182709C100F7C6E8 /* Ruby.framework in Frameworks */,
+				CEA008E718475E1C00B76BEC /* Ruby.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +56,7 @@
 		33CDE7B11827091E00F7C6E8 /* ThirdParty Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				33CDE7B2182709C100F7C6E8 /* Ruby.framework */,
+				CEA008E618475E1C00B76BEC /* Ruby.framework */,
 			);
 			name = "ThirdParty Frameworks";
 			sourceTree = "<group>";
@@ -167,7 +167,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = ../ThirdParty/include/ruby/mac;
+				HEADER_SEARCH_PATHS = ../ThirdParty/include/ruby/2.0.0/mac;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx10.8;
 			};
@@ -192,7 +192,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = ../ThirdParty/include/ruby/mac;
+				HEADER_SEARCH_PATHS = ../ThirdParty/include/ruby/2.0.0/mac;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx10.8;
 			};
@@ -207,7 +207,7 @@
 				EXECUTABLE_PREFIX = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../ThirdParty/lib/mac\"",
+					"\"$(SRCROOT)/../ThirdParty/lib/mac/2.0.0\"",
 				);
 				MACH_O_TYPE = mh_bundle;
 				PRODUCT_NAME = SUEX_HelloWorld;
@@ -223,7 +223,7 @@
 				EXECUTABLE_PREFIX = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../ThirdParty/lib/mac\"",
+					"\"$(SRCROOT)/../ThirdParty/lib/mac/2.0.0\"",
 				);
 				MACH_O_TYPE = mh_bundle;
 				PRODUCT_NAME = SUEX_HelloWorld;
