@@ -25,6 +25,7 @@
 		33CDE7B618270A4800F7C6E8 /* RubyLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RubyLib.h; sourceTree = "<group>"; };
 		33CDE7B718270A4800F7C6E8 /* RubyUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RubyUtils.cpp; sourceTree = "<group>"; };
 		33CDE7B818270A4800F7C6E8 /* RubyUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RubyUtils.h; sourceTree = "<group>"; };
+		CE1590E518479EAB0084B06D /* SUEX_HelloWorld_exports.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = SUEX_HelloWorld_exports.txt; sourceTree = "<group>"; };
 		CE405E8A184763D300A77187 /* SUEX_HelloWorld.bundle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = SUEX_HelloWorld.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE405E8B1847667D00A77187 /* Ruby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ruby.framework; path = ../ThirdParty/lib/mac/1.8.6/Ruby.framework; sourceTree = "<group>"; };
 		CE405E9218476E1300A77187 /* Ruby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ruby.framework; path = ../ThirdParty/lib/mac/2.0.0/Ruby.framework; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 			children = (
 				33CDE7B518270A4800F7C6E8 /* RubyUtils */,
 				33CDE7AF182705EB00F7C6E8 /* SUEX_HelloWorld.cpp */,
+				CE1590E518479EAB0084B06D /* SUEX_HelloWorld_exports.txt */,
 				33CDE7B11827091E00F7C6E8 /* ThirdParty Frameworks */,
 				33CDE5E6182703B200F7C6E8 /* Products */,
 			);
