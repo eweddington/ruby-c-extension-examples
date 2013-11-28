@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "33CDE5E4182703B100F7C6E8"
                BuildableName = "SUEX_HelloWorld.bundle"
-               BlueprintName = "Ruby 2.0.0"
+               BlueprintName = "Ruby 2.0"
                ReferencedContainer = "container:SUEX_HelloWorld.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -30,7 +30,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CE405E7E184763D300A77187"
                BuildableName = "SUEX_HelloWorld.bundle"
-               BlueprintName = "Ruby 1.8.6"
+               BlueprintName = "Ruby 1.8"
                ReferencedContainer = "container:SUEX_HelloWorld.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
