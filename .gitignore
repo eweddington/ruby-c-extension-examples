@@ -1,6 +1,5 @@
-Hello World/Debug/
-Debug/
-Release/
+Debug (*.*)/
+Release (*.*)/
 
 *.opensdf
 *.sdf
