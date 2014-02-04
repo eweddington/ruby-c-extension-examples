@@ -20,7 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
-    <None Include="SUEX_HelloWorld.def">
+    <None Include="RubyExtension.def">
       <Filter>Ruby Extension</Filter>
     </None>
   </ItemGroup>

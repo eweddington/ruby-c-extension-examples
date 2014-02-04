@@ -87,7 +87,7 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ModuleDefinitionFile>.\$(ProjectName).def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>.\RubyExtension.def</ModuleDefinitionFile>
       <AdditionalLibraryDirectories>$(SolutionDir)ThirdParty\lib\win32</AdditionalLibraryDirectories>
       <AdditionalDependencies>msvcrt-ruby200.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
@@ -111,7 +111,7 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ModuleDefinitionFile>.\$(ProjectName).def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>.\RubyExtension.def</ModuleDefinitionFile>
       <AdditionalLibraryDirectories>$(SolutionDir)ThirdParty\lib\win32</AdditionalLibraryDirectories>
       <AdditionalDependencies>msvcrt-ruby18.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
@@ -142,7 +142,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalLibraryDirectories>$(SolutionDir)ThirdParty\lib\win32</AdditionalLibraryDirectories>
       <AdditionalDependencies>msvcrt-ruby200.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>.\$(ProjectName).def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>.\RubyExtension.def</ModuleDefinitionFile>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -171,7 +171,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalLibraryDirectories>$(SolutionDir)ThirdParty\lib\win32</AdditionalLibraryDirectories>
       <AdditionalDependencies>msvcrt-ruby18.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>.\$(ProjectName).def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>.\RubyExtension.def</ModuleDefinitionFile>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -184,7 +184,7 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="SUEX_HelloWorld.def" />
+    <None Include="RubyExtension.def" />
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
