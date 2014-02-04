@@ -8,4 +8,6 @@ ipch/
 
 xcuserdata/
 
+*.sublime-workspace
+
 C-Examples
