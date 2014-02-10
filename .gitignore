@@ -1,8 +1,14 @@
-Hello World/Debug/
-Debug/
+Debug (*.*)/
+Release (*.*)/
+
+*.vcxproj.user
 *.opensdf
 *.sdf
-ipch/
 *.suo
-Release/
+ipch/
+
 xcuserdata/
+
+*.sublime-workspace
+
+C-Examples
