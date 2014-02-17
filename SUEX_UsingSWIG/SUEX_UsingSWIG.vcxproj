@@ -78,19 +78,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="MyCustomTool.cpp" />
-    <ClCompile Include="SUEX_UsingSWIG.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <CustomBuild Include="Swig_input.i">
       <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(SolutionDir)ThirdParty\bin\win32\swig\swig.exe" -c++ -Wall -o "$(ProjectDir)Swig_output.h" -ruby -noautorename -cppcast "%(FullPath)"</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)Swig_wrap.h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(SolutionDir)ThirdParty\bin\win32\swig\swig.exe" -c++ -Wall -o "$(ProjectDir)src/Swig_output.h" -I"$(ProjectDir)src" -ruby -noautorename -cppcast "%(FullPath)"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)src/Swig_output.h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(SolutionDir)ThirdParty\bin\win32\swig\swig.exe" -c++ -Wall -o "$(ProjectDir)src/Swig_output.h" -I"$(ProjectDir)src" -ruby -noautorename -cppcast "%(FullPath)"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)src/Swig_output.h</Outputs>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MyCustomTool.h" />
-    <ClInclude Include="Swig_output.h" />
+    <ClCompile Include="src\MyCustomTool.cpp" />
+    <ClCompile Include="src\SUEX_UsingSWIG.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\MyCustomTool.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
