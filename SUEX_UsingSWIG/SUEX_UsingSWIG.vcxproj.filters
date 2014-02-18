@@ -10,15 +10,24 @@
     <CustomBuild Include="Swig_input.i" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\MyCustomTool.cpp">
+    <ClCompile Include="src\MyNativeClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\SUEX_UsingSWIG.cpp">
+    <ClCompile Include="src\INativeToRuby.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Swig_output.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\MyCustomTool.h">
+    <ClInclude Include="src\MyNativeClass.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\INativeToRuby.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Swig_output.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

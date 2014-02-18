@@ -12,6 +12,6 @@ xcuserdata/
 *.sublime-workspace
 
 C-Examples
-SUEX_UsingSWIG/src/Swig_output.h
+SUEX_UsingSWIG/src/Swig_output.*
 Debug/
 Release/
