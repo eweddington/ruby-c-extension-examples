@@ -19,7 +19,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ReadMe.txt" />
     <None Include="RubyExtension.def">
       <Filter>Ruby Extension</Filter>
     </None>

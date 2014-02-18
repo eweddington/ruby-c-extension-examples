@@ -207,7 +207,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="RubyExtension.def" />
-    <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\SUEX_HelloWorld.cpp" />
